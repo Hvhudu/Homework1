@@ -27,6 +27,10 @@ namespace Homework1
             {
                 return Math.Sqrt(Grivn * Grivn + Cop * Cop);
             }
+            public void Print()
+            {
+                Console.Write($"{Grivn} гривен {Cop} Копеек");
+            }
             public static Money operator +(Money a, Money b)
             {
                 int res_grivn = a.Grivn + b.Grivn;
